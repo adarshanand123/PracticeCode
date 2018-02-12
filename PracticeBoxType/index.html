@@ -4,8 +4,18 @@
 <!-- block elemets: height and width work for them.If you don't specify,width will be width of parent and height will be as per requirement -->
 <!-- inline-block: inline block is totally same to block element,difference is that if you donot specify width,it will assume width as much content requires.-->
 <!-- Additional points: 1> Wrapping works normally to everyone,be it block,inline or inline-block.For block,text wraps at edge of screen(if width not specified) or wraps if width ends.For inline,text wraps always at edge of screen.Inline show same property as block for wrapping.And if one word is too long,scroll bar will be created in screen for any display type. 
-						2> font-size
-						3>Overflow only works for blocks. -->
+						2>Overflow only works for blocks. -->
+
+
+
+<!-- Concept of inline block is that if that block is placed in a line,it should  not break flow of line.Now consider the situatiuons that what would happen if inline block didnot have following properties:
+1>Suppose you wanted to format a part of line, and if inline donot acquire space as much as its content,instead if it acquires whole line as div,then "i (span) am (/span) ashish" would give: 
+I
+am
+Ashish.
+2>Inline block is not given property of width and height,since an inline element doesnot require them.Think,can you get any reason why do inline elemet require width and height.Inline element donot act as container,so giving them height and width property is of no use.
+3>Inline element is not given property of vertical margin,vertical padding and vertical border(vertical padding and vertical border exits but only as fill area and they donot push anything) reason being ,suppose you have written 5 lines of text and and you want to format a word in fourth line, I donot see any scope(reason) why should there be space required  b/w 3rd and 4th line and 4th line and 5th line.If you increase font of inline element and you get some space b/w 3rd line and 4th line,then it would look OK to see but without increase in font,there is no meaning of space. -->
+
 <!DOCTYPE html>
 <html>
 <head>
