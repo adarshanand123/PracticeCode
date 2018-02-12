@@ -1,0 +1,31 @@
+<!-- Topic:	 difference b/w inline ,block and inline-block -->
+<!-- There are just two things to consider and these are 1>margin,padding,border stuff   2>width,height stuff -->
+<!-- inline elements: height and width donot work for them.Height and width will always be as per requirement.Only horizonatal margin and horizonatal padding and horizontal border.But vertical padding comes in fill area(important),i.e vertical padding will not push but it can be filled by background color.See fill area and padding as different stuff.Now only padding can push.But since for inline,only horizontal padding,margin and border exits,so what you see as vertical padding is actually a  fill area only.-->
+<!-- block elemets: height and width work for them.If you don't specify,width will be width of parent and height will be as per requirement -->
+<!-- inline-block: inline block is totally same to block element,difference is that if you donot specify width,it will assume width as much content requires.-->
+<!-- Additional points: 1> Wrapping works normally to everyone,be it block,inline or inline-block.For block,text wraps at edge of screen(if width not specified) or wraps if width ends.For inline,text wraps always at edge of screen.Inline show same property as block for wrapping.And if one word is too long,scroll bar will be created in screen for any display type. 
+						2> font-size
+						3>Overflow only works for blocks. -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#boxtype{
+	display:block;
+	margin:20px;
+	padding:10px;
+/*	border:5px solid;*/
+/*	width: 200px;
+	height: 50px;*/
+	/*overflow:auto;*/
+}
+</style>
+</head>
+<body>
+<!-- <div>asd</div> -->
+<div id="boxtype" style = "background-color:orange;">
+I am Ashish Kumar.In anticipation of a challenging role as a programmer or a developer.Dynamic, fast and eager to learn.Target oriented .i cracked jee  2012 in my first attempt.<span>Able to</span> write effcient code.n anticipation of a challengingmer or a developer.Dynamic, fastam Ashish Kumar.In anticipation of a challenging role a nticipation of a challenging role as a programmer or a developer.Dy rst attempt.Able to write effcient co
+</div>
+
+</body>
+</html>
